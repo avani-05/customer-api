@@ -1,10 +1,4 @@
-# install CPU-only build of PyTorch first
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.3.0+cpu          # ≈200 MB wheel, no CUDA needed on Render free tier
-
-# web framework and ASGI server
 fastapi==0.111.0
-uvicorn[standard]==0.29.0  # brings in uvloop, httptools, etc.
-
-# NLP / tokenizer stack
-transformers==4.40.2
+uvicorn[standard]==0.29.0
+nltk==3.9.1
+pydantic==2.11.7
